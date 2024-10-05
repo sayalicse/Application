@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="backend.php">
+        <label for="name">Name</label><!--it will activate box hen you click on the label-->
+       <div>
+           <input type="text" name="name" id="name"><!--if direct write another attribute then it will come in same line for that to separate this required br tag or div tag-->
+
+       </div>
+       <br>
+       <div>
+           Address:<input type="text" name="address">
+
+       </div>
+       <br>
+       <div>
+        Email:<input type="email" name="myemail"> <!--it will identify at backend is myemail-->
+    </div>
+    <br>
+    <div>
+        Date:<input type="date" >
+    </div>
+    <br>
+    <div>
+        Bonus:<input type="number" > <!-- it will accept only e character and number because it is 10 to power-->
+    </div>
+    <br>
+    <div>
+        Are You Eligible:<input type="checkbox"  name="eligibility" checked>
+    </div>
+    <br>
+    <div>
+        Gender:Male<input type="radio"  name="mygender">Female<input type="radio" name="mygender"><!--if you take name as same then you can pick one value-->
+        Other:<input type="radio" name="mygender">
+    </div>
+    <br>
+    <div>
+        Write about yourself?:<br><textarea name="mytaext" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="my car" id="car">
+            <option value="THAR">THAR</option>
+            <option value="BMW" selected>BMW</option>
+            <option value="AUDI">AUDI</option>
+            </select>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit now">
+        <input type="Reset" value="Reset now">
+    </div>
+        <br>
+                        
+                        
+    </form>
+</body>
+</html>
